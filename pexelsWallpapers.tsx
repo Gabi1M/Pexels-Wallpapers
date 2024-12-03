@@ -9,7 +9,7 @@ import { PhotoItem } from "./photoItem"
 import { SearchBar } from "./searchBar"
 
 const createUri = (query: string) => `https://api.pexels.com/v1/search?query=${query}&per_page=20&orientation=portrait`
-const authKey = 'auth-key'
+const authKey = 'L786Mu3Y7OGqyzKHDMVJ3i862Boc3nCegB9N7rAC6FT5BASg8RzHAwYJ'
 
 export const PexelsWallpapers = () => {
     const [draftQuery, setDraftQuery] = React.useState('')

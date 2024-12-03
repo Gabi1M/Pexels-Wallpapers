@@ -28,7 +28,7 @@ export const SearchBar = ({ draftQuery, setDraftQuery, onSearch }: Props) => {
                 style={styles.textInput}
                 placeholderTextColor='gray'
             />
-            <TouchableOpacity onPress={onSearch}>
+            <TouchableOpacity onPress={onSearch} style={styles.icon}>
                 <MaterialCommunityIcons name="magnify" size={24} color="black" />
             </TouchableOpacity>
         </Animated.View>
@@ -40,7 +40,10 @@ const styles = StyleSheet.create({
         flexDirection: 'row',
         justifyContent: 'space-between',
         gap: 24,
-        backgroundColor: 'aqua',
+        backgroundColor: '#afd8d8',
+        borderWidth: 1,
+        borderColor: '#bde7e7',
+        opacity: 0.8,
         paddingHorizontal: 12,
         paddingVertical: 6,
         borderRadius: 12,
@@ -53,4 +56,8 @@ const styles = StyleSheet.create({
         color: 'black',
         flex: 1
     },
+    icon: {
+        alignItems: 'center',
+        justifyContent: 'center'
+    }
 })
